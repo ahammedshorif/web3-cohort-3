@@ -4,3 +4,7 @@ const keypair= solanaWeb3.Keypair.generate();
 
 const publicKey=keypair.publicKey.toBase58();
 console.log(publicKey);
+
+const privateKey = keypair.secretKey;
+console.log(privateKey);
+

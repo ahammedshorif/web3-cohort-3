@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "@noble/ed25519": "^3.0.0",
-    "@solana/web3.js": "^1.21.1"
+    "@solana/web3.js": "^1.21.1",
+    "bip39": "^3.1.0"
   }
 }
