@@ -8,3 +8,9 @@ console.log(publicKey);
 const privateKey = keypair.secretKey;
 console.log(privateKey);
 
+
+// 1sol = 10**9  Lamports
+console.log(solanaWeb3.LAMPORTS_PER_SOL);
+
+
+
