@@ -11,6 +11,7 @@ console.log(privateKey);
 
 // 1sol = 10**9  Lamports
 console.log(solanaWeb3.LAMPORTS_PER_SOL);
+console.log(solanaWeb3.Secp256k1Program);
 
 
 
