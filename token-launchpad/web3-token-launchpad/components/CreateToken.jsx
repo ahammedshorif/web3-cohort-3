@@ -1,4 +1,7 @@
 import React from 'react'
+import {ConnnectionProvider} from '@solana/wallet-adapter-react'
+import { WalletModalProvider,WalletDisconnectButton,WalletMultiButton } from '@solana/wallet-adapter-react-ui'
+import '@solana/wallet-adapter-react-ui/styles.css'
 
 function CreateToken() {
   return (
