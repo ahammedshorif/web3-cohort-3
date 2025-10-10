@@ -1,5 +1,5 @@
 import CreateToken from "../components/CreateToken"
-import {ConnnectionProvider} from '@solana/wallet-adapter-react'
+import {ConnnectionProvider, WalletProvider} from '@solana/wallet-adapter-react'
 import { WalletModalProvider,WalletDisconnectButton,WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css'
 
@@ -7,9 +7,11 @@ function App() {
  
 
   return (
-    <div>
-       <CreateToken></CreateToken>
-    </div>
+    <ConnnectionProvider endpoint="http://api.devnet.solana.com">
+      <WalletProvider wallets={[]}>
+         <CreateToken></CreateToken>
+       </WalletProvider>
+    </ConnnectionProvider>
   )
 }
 
