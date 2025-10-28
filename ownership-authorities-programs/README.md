@@ -25,3 +25,20 @@ Every Solana **account** has an **owner** — the **program** that controls how 
 ```rust
 // Example: change ownership of an account
 solana_program::system_instruction::assign(&account_pubkey, &new_owner_program_id);
+```
+
+## 2. Authorities in Solana
+
+While ownership defines which program controls an account,
+authorities define which user or account keypair has permission to perform specific actions.
+
+Authorities are primarily used in the SPL Token Program and program-derived accounts (PDAs) to control functionality like minting, transferring, and freezing tokens.
+
+### Common SPL Token Authorities
+
+| Authority Type | Description| Example Action |
+|----------------|------------|----------------|
+| Mint Authority | Can mint new tokens | mint_to() |
+| Freeze Authority | Can freeze token accounts to prevent transfers | freeze_account() |
+| Owner Authority | Controls a specific token account | transfer() |
+| Close Authority | Can close a token account to reclaim rent | close_account() |
