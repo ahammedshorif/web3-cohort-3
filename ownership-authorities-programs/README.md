@@ -38,7 +38,7 @@ Authorities are primarily used in the SPL Token Program and program-derived acco
 
 | Authority Type | Description| Example Action |
 |----------------|------------|----------------|
-| Mint Authority | Can mint new tokens | mint_to() |
-| Freeze Authority | Can freeze token accounts to prevent transfers | freeze_account() |
-| Owner Authority | Controls a specific token account | transfer() |
-| Close Authority | Can close a token account to reclaim rent | close_account() |
+| Mint Authority | Can mint new tokens | `mint_to()` |
+| Freeze Authority | Can freeze token accounts to prevent transfers | `freeze_account()` |
+| Owner Authority | Controls a specific token account | `transfer()` |
+| Close Authority | Can close a token account to reclaim rent | `close_account()` |
